@@ -82,7 +82,7 @@ contract HYCOTOKEN is Context, IERC20, Ownable {
         MY_ADDR = address(this);
 
         _rOwned[_msgSender()] = _rTotal;
-        emit Transfer(address(0), _msgSender(), _rTotal);
+        emit Transfer(address(0), _msgSender(), _tTotal);
 
         whitelist[address(this)] = true;
         whitelist[_msgSender()] = true;
